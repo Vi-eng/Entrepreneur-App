@@ -4,8 +4,11 @@
 This is an application designed primarily for new Entrepreneurs by the members of team AlphaLogic of the Hackathon 1.0 of LAPO Microfinance Bank DevOps team. 
 
 The members of team AlphaLogic include: 
+
 Damilola Oni
+
 Samuel Itojie
+
 Osazuwa-Ojo Victory(me)
 
 The application's process flow can be found here:
