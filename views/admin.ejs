@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- this link is for google font poppins-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/dashboard.css">
+    <script src="https://kit.fontawesome.com/0ddd23bcd0.js" crossorigin="anonymous"></script>  <!-- this link is for font awesome icons-->
+
+</head>
+<body>
+                <!-- this is the top nav bar source code-->
+                <div class="top-nav-style">  <!-- this is a grid that contains 5 divs so the divs are postioned by the grid-->
+                                <div class="">
+                                        <img src="images/icons/lapo vector.png" class="pad-class" alt="lapo-logo" width="40%" height="85%">
+                                </div>
+                                <div class="mini-centralize">
+                                        <p class="name-px"><b>Hello,</b> <%=name%> </p>
+                                </div>
+                                <div class="centralize">
+                                        <div>
+                                                <input type="search" placeholder="search" id="search" name="search">
+                                                <span> <i class="fa-solid fa-magnifying-glass" style="color: #0abf12;  width: 50;  height: 50; "></i></span>
+                                        </div>
+                                </div>
+                                <div class="centralize">
+                                        <div class="inner-circle centralize">
+                                                <a href="/Admin-profile">
+                                                        <i class="fa-solid fa-user fa-xl" style="color: #ff5c00;"></i>
+                                                </a>
+                                        </div>
+                                </div>
+                                <div class="centralize">
+                                                <div class="dropdwn" >
+                                                        <i class="fa-solid fa-ellipsis fa-rotate-90 fa-2x" style="color: #ff5c00;"></i>
+                                                        <div class="dropdown-content">
+                                                                <a href="#">Theme</a>
+                                                                <a href="/Logout">Log out</a>
+                                                        </div>
+                                                </div>
+                                                
+                                        </i>
+                                </div>
+                </div>
+
+                     <!-- this is the side bar source code-->
+                <div class="side-bar">
+                        <div class="sb-centralize side-bar-text-color dip">
+                            <div class="radius"> <!-- this radius class here is used to show that we are on this current page-->
+                                                <span class="space ">
+                                                        <i class="fa-sharp fa-solid fa-house fa-xl" style="color: #0abf12;"></i>
+                                                </span>
+                                                <h3 class="c-page">Dashboard</h3>
+                                 </div>
+                        </div>
+                    
+                        <div class="sb-centralize side-bar-text-color dip">
+                                <a href="/EAdmin" class="dsh-link" class="dsh-link">
+                                        <span class="space">  
+                                            <i class="fa-solid fa-briefcase fa-xl" style="color: #ffffff;"></i>
+                                        </span>
+                                        <h3 class="d-inl">Entrepreneurs</h3>
+                                </a>       
+                        </div>
+                    
+                        <div class="sb-centralize side-bar-text-color dip">
+                                <a href="/IAdmin" class="dsh-link">
+                                        <span class="space">
+                                                <i class="fa-solid fa-chalkboard-user fa-xl" style="color: #ffffff;"></i>
+                                        </span>
+                                        <h3 class="d-inl">Investors</h3>
+                                </a>
+                        </div>
+                    
+                        <div class="sb-centralize side-bar-text-color dip">
+                            <a href="/MAdmin" class="dsh-link">
+                                        <span class="space">
+                                                <i class="fa-solid fa-user fa-xl" style="color:#ffffff ;"></i>
+                                        </span>
+                                        <h3 class="d-inl">Mentors</h3>
+                                 </a>
+                        </div>
+                    
+                        <div class="ent-cntr side-bar-text-color dip">
+                                <p>entrepreneur 2023.</p>
+                        </div>
+               </div>
+
+                <!-- this is the side bar source code-->
+                <div class="i-right-side">
+                        <div class="centralize i-d-frow" >
+                                    <div class="i-both-cont">
+                                    
+                                        <div class="ii-out-sct mt">
+                                                <div class="si-in-fsect">
+                                                         <h3 class="txt-ali">Entrepreneures Requesting Funding</h3>
+                                                </div>
+                                                 <table class="amr">
+                                                        <thead>
+                                                                <tr>
+                                                                        <th>Businesses Name</th>
+                                                                        <th>Amount Requested</th>
+                                                                        <th>Funds Type</th>
+                                                                        <th>View</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id = 'tbody'>
+
+                                                            </tbody>
+                                                        
+                                                 </table>
+                                                
+                                         </div> 
+
+                                         <div class="ii-out-sct mt">
+                                            <div class="si-in-fsect">
+                                                     <h3 class="txt-ali">Entrepreneures Requesting Mentors</h3>
+                                            </div>
+                                             <table class="amr">
+                                                    <tr>
+                                                        <th>Business Name</th>
+                                                        <th>Business Sector</th>
+                                                        <th>Applied Before</th>
+                                                        <th>View</th>
+                                                    </tr>
+                                                    <tbody id = 'tbody2'></tbody>
+                                                    <tr>
+                                                        <td class="amr-td">SkyTech Limited</td>
+                                                        <td class="amr-td">Technology</td>
+                                                        <td>No</td>
+                                                        <td>
+                                                                    <a href="/MAdmin">
+                                                                            <button type="submit" class="brq-submit" > Click to view</button> 
+                                                                    </a>
+                                                             </td>
+                                                    </tr>
+                                                    
+                                                    <tr>
+                                                        <td class="amr-td">Cocoa Bliss Limited</td>
+                                                        <td class="amr-td">Food</td>
+                                                        <td>Yes</td>
+                                                        <td>
+                                                            <a href="/MAdmin">
+                                                                    <button type="submit" class="brq-submit" > Click to view</button> 
+                                                            </a>
+                                                     </td>
+                                                    </tr>
+                                                    
+                                             </table>
+                                            
+                                     </div> 
+                                         
+                                </div>
+                       </div>
+               </div>
+       
+                <script src = './javascripts/Mentors_funds.js' type = 'module'></script>
+               <script type = 'module'>
+               import {admindash1, admindash2, adminmentdash} from './javascripts/Mentors_funds.js';
+                let popup = document.getElementById("popup")
+
+                function openPopup(){
+                        popup.classList.add("open-popup")
+                }
+                function closePopup(){
+                        popup.classList.remove("open-popup")
+                }
+
+                //Process returned values
+                admindash1().then(rows => {
+                var returned_rows = rows;
+                console.log(returned_rows);
+                var tablebody = document.getElementById('tbody');
+
+                if(returned_rows.length > 0){
+                        tablebody.innerHTML = returned_rows;
+                        console.log('tablebody', tablebody);
+                }
+                });
+
+                admindash2().then(rows => {
+                var returned_rows = rows;
+                console.log(returned_rows);
+                var tablebody = document.getElementById('tbody');
+
+                if(returned_rows.length > 0){
+                        tablebody.innerHTML += returned_rows;
+                        console.log('tablebody', tablebody);
+                }
+                });
+
+                adminmentdash().then(rows => {
+                var returned_rows = rows;
+                console.log(returned_rows);
+                var tablebody = document.getElementById('tbody2');
+
+                if(returned_rows.length > 0){
+                        tablebody.innerHTML += returned_rows;
+                        console.log('tablebody', tablebody);
+                }
+                });
+
+       </script>
+
+       </script>
+</body>
+</html>

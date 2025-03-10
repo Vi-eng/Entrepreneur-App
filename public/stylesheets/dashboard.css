@@ -1,0 +1,853 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif ;
+}
+body{
+    background-color: #FFF1D4; /*commented out to see d full height of the rightside div*/
+    height: 53.5vw;
+}
+
+.top-nav-style{ /*this contains all the 5 divs*/
+    background-color: white;
+    display: grid;
+    grid-template-columns: 20% 52% 20% 4% 3%;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+.mini-centralize{ /*this is the class (like a function) that i would be using to only vertically centralize item inside container elements*/
+    display: flex;
+    align-items: center;
+}
+.centralize{ /*this is the class (like a function) that i would be using to centralize item inside container elements*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pad-class{ /*this padding is to centralize the lapo logo since d flex style centering was to to much*/
+    margin-left: 20%;
+    margin-top: 2%
+}
+@media  (min-width: 480px) and (max-width: 1000px ){ /*media query for my logo*/
+    .pad-class{ /*this padding is to centralize the lapo logo since d flex style centering was to to much*/
+        margin-left: 15%;
+        margin-top: 13%
+    }
+    img{
+        width: 65%;
+        height: 65%;
+    }   
+    
+}
+.name-px{
+    font-size: 20px;
+}
+input[type=search]{
+    height: 35px;
+    padding-left: 10px;
+    border: 2px solid #0ABF12;
+    border-radius: 30px;
+}
+
+input[type=search]:focus{
+    width: 15rem;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+    box-shadow: 0 0 1px 1px #0ABF12; 
+}
+
+.inner-circle{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid #FF5C00;
+}
+.dropdown {
+    position: relative;
+    cursor: pointer;
+  }
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;  
+    max-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+.dropdown-content a {
+    background-color: white;
+    color: #FF5C00;
+    padding: 6px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #FF5C00;
+    color: white;
+}
+.dropdwn a:hover{
+    cursor: pointer;
+}
+.dropdwn:hover .dropdown-content{
+    display: block;
+    cursor: pointer;
+}
+
+/*This is side bar css code*/
+.side-bar{
+    background-color: #FF5C00;
+    display: grid;
+    grid-template-rows: 13% 13% 13% 13% 46%;
+    position: fixed;
+    width: 18%;
+    height: 91%;
+    padding-top: 2%;
+}
+.sb-centralize{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 15%;
+}
+.c-page{ /*this is d color for the current page text*/
+    color: #0ABF12;
+}
+.radius{
+    border-radius: 50px 0px 0px 50px;
+    border: 1px solid #FF5C00;
+    background-color: #FFF1D4;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0px 2px 5px 0px black;
+    padding-left: 9%;
+}
+.dip{  /*this is for the side bar dive menus dip: div inner padding, this padding is to left align the side bar menus*/
+    padding-left: 25%;
+}
+.side-bar-text-color{
+    color: white;
+}
+.space{ /*to give space btw d icon and d text on d side bar*/
+    display: inline-block;
+    margin-right: 10px;
+}
+.d-inl{/*this is used to make all the side bar h3 text its icon to be inline*/
+    display: inline;
+}
+.dsh-link{ /*this is giving the side bar links a style */
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+    font-size: 17.6px;
+}
+.ent-cntr{
+    display: flex;
+    align-items: end;
+    padding-bottom: 30px;
+}
+
+/*this is the css section for the right side*/
+.right-side{
+    width: 82%;
+    background-color: #FFF1D4;
+    margin-top: 5%; /*this margin top is working for both the side bar and right-side containers*/
+    margin-left:  18%;  
+}
+.frow{
+    background-clor: violet;
+    padding: 2%;
+    margin: 1%;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+.srow{
+    backgrond-color: rgb(99, 6, 21);
+    padding: 2%;
+    margin: 2%;
+    width: 70%;
+    height: 400px;
+    flex-direction: column;
+}
+.Anlyts-sct{
+    width: 100%;
+    height: 100%;
+    margin: 2%;
+    border-radius: 20px;
+    background-color:   #f7fff8;
+    flex-direction: column;
+    box-shadow: 0px 2px 5px 0px rgb(63, 63, 63);
+}
+.img-anlts-cont{
+    margin-top: 3%;
+    width: 100%;
+    height: 100%;
+}
+.fund-img{
+    width:  80%;
+    height: 80%;
+}
+.growth-img{
+    width:  100%;
+    height: 100%;
+}
+.h-sect{ /*style 4 the h1 analytics*/
+    background-color: #FF5C00;
+    color: white;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+}
+.b-cont{ /*container for d headind and the table details*/
+    width: 100%;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+.table-cont{
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    width: 100%;
+}
+.b-detls{ /*table business details*/
+    width: 100%;
+    padding: 4% 4%;
+    color: #FF5C00;
+}
+.n-td{
+    width: 80%;
+}
+
+th, td {
+    padding: 2%;
+    text-align: left;
+    background-color: rgb(230, 230, 231);
+}
+
+/*e-viewfunds css*/
+.eview-frow{
+    backgroud-color: violet;
+    padding: 2%;
+    margin: 1%;
+    width: 100%;
+    height: 25vh;
+    flex-direction: row;
+}
+.Tact-sct{
+    width: 100%;
+    height: 100%;
+    margin: 2%;
+    border-radius: 20px;
+    background-color:   #0abf12;
+    flex-direction: column;
+    box-shadow: 0px 2px 5px 0px rgb(63, 63, 63);
+}
+.rsd-eview-link{
+    text-decoration: none;
+    color: white;
+}
+
+/*e-Apply-funds css*/
+.bck{
+    margin-left: 30px;
+}
+.a-bck{
+    display: inline;
+}
+.af-frow{
+    backgrond-color: violet;
+    padding: 2%;
+    margin: 1%;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+.formm{
+    width: 100%;
+    height: 65vh;
+    margin: 0% 2%; /*when you display a div as flex u cannot padding inside that div*/
+    background-color: white;
+    flex-direction: column;
+    color: #0ABF12;
+}
+.af-Tact-sct{
+    width: 100%;
+    height: 15vh;
+    margin: 2% 2% 0% 2%;
+    background-color:   #0abf12;
+    flex-direction: column;
+    box-shadow: 0px 2px 5px 0px rgb(63, 63, 63);
+}
+.text-headn{
+    color: white;
+}
+.form-text-headn{
+    color: #0ABF12;
+}
+.af-form{
+    backgroud-color: aqua;
+    width: 60%;
+    height: 85%;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.form-fsect{
+    backgroud-color: yellow;
+    width: 50%;
+    height: 90%;
+}
+.form-Ssect{
+    backgound-color: red;
+    width: 45%;
+    height: 90%;
+}
+.inp-types{
+    width: 80%;
+    height: 35px;
+    border: 2px solid#0ABF12;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 18px;
+}
+.af-but-des{
+    background-color: #0ABF12;
+    width: 80%;
+    color: white;
+    border: none;
+    padding: 2% 5%;
+    margin-top: 1%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.pop-up{
+    width: 250px;
+    background-color: rgb(245, 242, 242);
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 58%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  
+}
+
+.tick-img{
+    width: 60px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0px rgb(0, 0, 0);
+}
+.fnt{
+    font-size: 16px;
+    font-weight: 400;
+}
+.inn-but{
+    width: 80%;
+    margin: 20px 0px;
+    padding: 5px 0px;
+    background-color: #0ABF12;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgb(0, 0, 0);
+}
+
+
+/*get a mentor css*/
+.gm-frow{
+    backgrond-color: violet;
+    padding: 2%;
+    margin: 1%;
+    width: 80%;
+    height: 100%;
+}
+.both-cont{
+    width: 60%;
+    height: 600px;
+}
+.gm-hed{
+    width: 60%;
+    background-color: #0ABF12;
+    color:white;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 11%;
+    border-radius: 50px;
+}
+.gm-formm{
+    width: 80%;
+    height: 70vh;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    color: #0ABF12;
+    border-radius: 5px;
+}
+.gm-form{
+    backgrond-color: aqua;
+    width: 100%;
+    height: 85%;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+.text-headn{
+    color: white;
+}
+.form-text-headn{
+    color: #0ABF12;
+}
+.gm-inp-types{
+    width: 100%;
+    height: 35px;
+    border: 1px solid#0ABF12;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px 0px rgb(95, 94, 94);
+}
+.gm-but-des{
+    background-color: #0ABF12;
+    width: 105%;
+    color: white;
+    border: none;
+    padding: 2% 5%;
+    margin-top: 1%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.sboth-cont{
+    width: 40%;
+    height: 600px;
+    background-coor: #FF5C00;
+    margin-left: 25px;
+}
+.sgm-hed{
+    width: 70%;
+    background-color: #0ABF12;
+    color:white;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 11%;
+    border-radius: 50px;
+}
+.out-sct{
+    background-color: white;
+    color: #0ABF12;
+    width: 95%;
+    height: 38%;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px 0px rgb(95, 94, 94);
+}
+.in-fsect{
+    background-color: #0ABF12;
+    color: white;
+    width: 100%;
+    height: 80px;
+    padding: 4%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px 0px rgb(95, 94, 94);
+}
+.cmr-txt{
+    padding: 4% 4% 0% 4%;
+    box-sizing: border-box;
+}
+.cmr-txt1{
+    padding:  0% 4% 2% 4%;
+    box-sizing: border-box;
+}
+.star-pad{
+    padding: 2% 4% 0% 4%;
+    margin-top: 2%;
+}
+.mt{
+    margin-top: 5%;
+}
+
+/*my profile css*/
+.mp-hed{
+    width: 70%;
+    background-color: #0ABF12;
+    color:white;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 11%;
+    border-radius: 50px;
+}
+.mp-out-sct{
+    background-color: white;
+    color: #0ABF12;
+    width: 95%;
+    height: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px 0px rgb(95, 94, 94);
+    flex-direction: column;
+}
+.mp-in-fsect{
+    background-color: #0ABF12;
+    color: white;
+    width: 50%;
+    height: 40%;
+    padding: 4%;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px 0px rgb(95, 94, 94);
+}
+.mp-cmr-txt{
+    padding: 4% 4% 0% 4%;
+    box-sizing: border-box;
+}
+.cmr-txt1{
+    padding:  0% 4% 2% 4%;
+    box-sizing: border-box;
+}
+.vfp-cont{
+    width: 50%;
+    flex-direction: row;
+}
+.mp-in-ssect{
+    background-color: white;
+    width: 30%;
+    height: 45px;
+    padding: 4% 4% 5% 5%;
+    margin-right: 10px;
+    box-sizing: border-box;
+    border: 3px solid #0ABF12;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px 0px rgb(95, 94, 94);
+}
+.mp-in-ssect1{
+    background-color: white;
+    color: #0ABF12;
+    width:100%;
+    height: 45px;
+    padding: 4%;
+    box-sizing: border-box;
+    border: 3px solid #0ABF12;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px 0px rgb(95, 94, 94);
+}
+
+/*I-dashboard css*/
+.i-right-side{
+    width: 82%;
+    background-color: #FFF1D4;
+    margin-top: 5%; /*this margin top is working for both the side bar and right-side containers*/
+    margin-left:  2%;  
+}
+.i-d-frow{
+    backgrond-color: rgb(6, 74, 170);
+    padding: 2%;
+    margin: 1%;
+    width: 100%;
+    height: 100%;
+}
+.i-both-cont{
+    width: 40%;
+    height: 700px;
+    backgrund-color: #FF5C00;
+    margin-left: 25px;
+}
+.sgm-hed{
+    width: 70%;
+    background-color: #0ABF12;
+    color:white;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+.i-out-sct{
+    background-color: white;
+    color: #0ABF12;
+    width: 95%;
+    height: 35%;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px 0px rgb(95, 94, 94);
+}
+.tw-cont{
+    width: 650px;
+}
+.i-out-sct{
+    background-color: rgb(255, 255, 255);
+    color: #0ABF12;
+    width: 75%;
+    height: 220px;
+    display: inline-block;
+    border-radius: 8px;
+}
+.i-in-fsect{
+    background-color: #0ABF12;
+    color: white;
+    width: 100%;
+    height: 100px;
+    padding: 4%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px 0px rgb(95, 94, 94);
+}
+.inv-more{
+    background-color: #0ABF12;
+    color: white;
+    display: inline-block;
+    width: 90px;
+    height: 45px;
+    padding: 10px 10px 20px 10px;
+    margin-left:10px;
+    border-radius: 10px;
+}
+.inv-link{
+    text-decoration: none;
+    color: white;
+}
+.inv-link:hover{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.sp{
+    margin-left: 20px;
+}
+.ii-out-sct{
+    background-color: rgb(255, 255, 255);
+    color: #0ABF12;
+    width: 650px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10%;
+}
+.si-in-fsect{
+    background-color: #0ABF12;
+    color: white;
+    width: 100%;
+    height: 70px;
+    padding: 4%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px 0px rgb(95, 94, 94);
+}
+.i-cmr-txt{
+    padding: 0% 4% 0% 0%;
+    box-sizing: border-box;
+}
+.cmr-txt1{
+    padding:  0% 4% 2% 4%;
+    box-sizing: border-box;
+}
+.d-innline{
+    display: inline-block;
+    margin-right: 130px;
+}
+.txt-ali{
+    display: inline-block;
+    width: 100%;
+    text-align: center !important;
+} 
+.red-width{
+    width: 58% !important;
+    margin-right: 15%;
+}
+.amr{
+    width: 100%;
+}
+.check{
+    width: 25px;
+    height: 25px;
+}
+.brq-submit{
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: #0ABF12;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px 0px rgb(95, 94, 94);
+}
+.amr-td{
+    background-color: rgb(227, 231, 231);
+}
+
+/*i-portfolio css*/
+.ip-both-cont{
+    width: 75%;
+    height: 900px;
+    background-coor: #FF5C00;
+    margin-left: 8px;
+}
+.ip-hed{
+    width: 30%;
+    height: 40px;
+    background-color: #0ABF12;
+    color:white;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 250px;
+    border-radius: 8px;
+}
+.ip-out-sct{
+    background-color: white;
+    color: #0ABF12;
+    width: 100%;
+    height: auto
+    ;
+    border-radius: 8px;
+}
+
+/*invest more css*/
+.iv-out-sct{
+    background-color: rgb(255, 255, 255);
+    color: #0ABF12;
+    width: 650px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.orange-back{
+    background-color: #FF5C00;
+}
+
+/*i-mentorship css*/
+.gm-im-formm{
+    width: 80%;
+    height: 75vh;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    color: #0ABF12;
+    border-radius: 5px;
+}
+.i-m-h3{
+    margin-top: 30px;
+}
+.form-msect{
+    backgroud-color: yellow;
+    width: 50%;
+    height: 90%;
+    margin-top: 20px;
+}
+.gm-txt-inp-types{
+    width: 100%;
+    height: 50px;
+    border: 1px solid#0ABF12;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.im-but-des{
+    background-color: #0ABF12;
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 2% 5%;
+    margin-top: 1%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/*mentors-dashboard*/
+.right-side{
+    width: 82%;
+    background-color: #FFF1D4;
+    margin-top: 5%; /*this margin top is working for both the side bar and right-side containers*/
+    margin-left:  18%;  
+}
+.md-frow{
+    backgound-color: violet;
+    padding: 2%;
+    margin: 1%;
+    width: 100%;
+    height: 100%;
+    flex-direction: column
+}
+.group-contt{
+    width: 100%;
+    flex-direction: row;
+    backgrund-color: yellow;
+    padding-top: 10px;
+}
+.group-sboth-cont{
+    width: 40%;
+    height: 600px;
+    backgrund-color: #FF5C00;
+    margin-left: 25px;
+}
+.fmg-big{
+    font-size: 18px;
+}
+
+
+
+/*tooltip, or brief description*/
+.dropdwn1 {
+    position: relative;
+    cursor: pointer;
+  }
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;  
+    max-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content .bio {
+    background-color: #0ABF12;
+    color: white;
+    padding: 6px 16px;
+    text-decoration: none;
+    width: 400px;
+    font-size: 17px;
+    border-radius: 8px;
+    display: block;
+}
+.dropdown-content .bio:hover {
+    background-color: #FF5C00;
+    color: white;
+}
+.dropdwn1:hover{
+    cursor: pointer;
+    display: block;
+}
+.dropdwn1:hover .dropdown-content{
+    display: block;
+    cursor: pointer;
+}
+
+#Business-idea-des{
+    height: 5rem;
+    font-size: 16px;
+}
+
+#Viewfunds{
+    cursor: pointer;
+}

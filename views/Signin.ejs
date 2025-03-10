@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html style = 'font-size: 20px; font-weight: 600; font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif'>
+    <head>
+        <title> Sign In to Entrepreneur App </title>
+        <!--link rel = 'stylesheet' href = '/Signin.css'-->
+        <link rel = 'stylesheet' href = 'stylesheets/Signin.css'>
+        <style>
+            #myModal{
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+
+            .modalcontent{
+                background-color: #fefefe;
+                margin: 15% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 65%;
+                border-radius: 1rem;
+                overflow: auto;
+            }
+
+            .close{
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover, .close:focus{
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        </style>  
+    </head>
+    <body style = 'font-size: 0.9rem'>
+        <p class = 'orangetxt centeralign'> ENTREPRENEURIAL HUB </p>
+        <div id = 'Login-body' color = 'whiteback'>
+            <div id = 'header' class = 'orange'>
+                <span id = 'Entrepreneur' class = 'white orangetxt'>
+                    Entrepreneur
+                </span>
+                <span id = 'Investor' class = 'whiteback orangetxt'>
+                    Investor
+                </span>
+                <span id = 'Mentor' class = 'whiteback orangetxt'>
+                    Mentor
+                </span>
+            </div>
+            <p id = 'signintxt' style = 'font-size: 0.7rem' class = 'centeralign'> Sign into your account </p>
+            <form style = 'font-size: 0.7rem' action = '/signin' method = 'POST'>
+                <div>
+                    <p class = 'orangetxt'>Username <span id = 'oremail'> or Email</span> </p>
+                    <input name = 'username' placeholder = 'Username' type = 'text'> </input>
+                    <p class = 'red hide val'>*The Username field is required </p>
+                </div>
+
+                <div class = 'entre hide signup'>
+                    <p class = 'orangetxt'>Business Name</p> 
+                    <input name = 'businessname' placeholder = 'Business name' type = 'text'> </input>
+                    <p class = 'red hide val'>*The Business Name field is required </p>
+                </div>
+
+                <div class = 'hide signup'>
+                    <p class = 'orangetxt'>Email</p>
+                    <input name = 'email' placeholder = 'Email' type = 'email'> </input>
+                    <p class = 'red hide val'>*The Email field is required </p>
+                </div>
+                
+                <div>
+                    <p class = 'orangetxt'>Password</p>
+                    <input id = 'passwordinput' name = 'password' placeholder = 'Password' type = 'password'> </input>
+                    <p class = 'red hide val'>*The passsword field is required </p>
+                </div>
+
+                <div class = 'hide signup'>
+                    <p class = 'orangetxt'>Confirm Password</p>
+                    <input name = 'c-password' placeholder = 'Confirm Password' type = 'password'> </input>
+                    <p class = 'red hide val'>*The confirm passsword field is required </p>
+                </div>
+
+                <div class = 'hide' id = 'ID'>
+                    <input name = 'id' id = 'id'><p id = 'logid'><%=id%></p></input>
+                </div>
+
+                <button class = 'white orange' type = 'submit'> Login </button>
+            </form>
+            <p id = 'Forgot' style = 'font-size: 0.7rem' class = 'centeralign'> Forgot Password? </p>
+            <p id = 'clicktocreate' style = 'font-size: 0.7rem' class = 'centeralign orangetxt'>Click to Create an account</p>
+        </div>
+        <p style = 'font-size: 0.7rem' class = 'centeralign copyright'> copyright 2023 </p>
+
+        <div id = 'myModal' class = 'modal'>
+            <div class = 'modalcontent'>
+                <span class = 'close'>&times;</span>
+                <h1 id = 'modal' class = 'orangetxt centeralign'><%=value%></h1>
+            </div>
+        </div>        
+        <script type = 'module'>
+            var h1value = document.getElementById('modal');
+
+            function displaymodal(){
+                if(h1value.innerText != ''){
+                    var modal = document.getElementById('myModal');
+                    modal.style.display = 'block';
+                    redirect();
+                };
+            }
+            function redirect(){   
+                if (h1value.innerText == 'You do not have an account with us'){
+                    //Signin
+                    document.getElementById('clicktocreate').click();
+                };   
+            }
+            displaymodal();
+        </script>
+        <script src = 'javascripts/Signin.js'> </script>
+        <!--script src = 'Signin.js'> </script-->
+    </body>
+</html>

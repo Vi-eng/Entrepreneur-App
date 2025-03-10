@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- this link is for google font poppins-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
+    <script src="https://kit.fontawesome.com/0ddd23bcd0.js" crossorigin="anonymous"></script>  <!-- this link is for font awesome icons-->
+
+</head>
+<body>
+                <!-- this is the top nav bar source code-->
+                <div class="top-nav-style">  <!-- this is a grid that contains 5 divs so the divs are postioned by the grid-->
+                                <div class="">
+                                        <img src="lapo vector.png" class="pad-class" alt="lapo-logo" width="40%" height="85%">
+                                </div>
+                                <div class="mini-centralize">
+                                        <p class="name-px"><b>Hello,</b> <%= name%> </p>
+                                </div>
+                                <div class="centralize">
+                                        <div>
+                                                <input type="search" placeholder="search" id="search" name="search">
+                                                <span> <i class="fa-solid fa-magnifying-glass" style="color: #0abf12;  width: 50;  height: 50; "></i></span>
+                                        </div>
+                                </div>
+                                <div class="centralize">
+                                        <div class="inner-circle centralize">
+                                                <i class="fa-solid fa-user fa-xl" style="color: #ff5c00;"></i>
+                                        </div>
+                                </div>
+                                <div class="centralize">
+                                                <div class="dropdwn" >
+                                                        <i class="fa-solid fa-ellipsis fa-rotate-90 fa-2x" style="color: #ff5c00;"></i>
+                                                        <div class="dropdown-content">
+                                                                <a href="#">Theme</a>
+                                                                <a href="#">Log out</a>
+                                                        </div>
+                                                </div>
+                                                
+                                        </i>
+                                </div>
+                </div>
+
+                     <!-- this is the side bar source code-->
+                <div class="side-bar">
+                        <div class="sb-centralize side-bar-text-color dip">
+                                <a href="e-dashboard.html" class="dsh-link">
+                                                <span class="space ">
+                                                        <i class="fa-sharp fa-solid fa-house fa-xl" style="color: #ffffff;"></i>
+                                                </span>
+                                                <h3 class="d-inl">Dashboard</h3>
+                                </a>
+                        </div>
+                    
+                        <div class="sb-centralize side-bar-text-color dip">
+                                <div class="radius"> <!-- this radius class here is used to show that we are on this current page-->
+                                        <span class="space">  
+                                                <i class="fa-solid fa-sack-dollar fa-xl" style="color: #0abf12;"></i>
+                                        </span>
+                                        <h3 class="c-page">View Funds</h3>
+                                </div>       
+                        </div>
+                    
+                        <div class="sb-centralize side-bar-text-color dip">
+                                <a href="e-Get-a-mentor.html" class="dsh-link"> 
+                                        <span class="space">
+                                                <i class="fa-solid fa-chalkboard-user fa-xl" style="color: #ffffff;"></i>
+                                        </span>
+                                        <h3 class="d-inl">Get a mentor</h3>
+                                </a>
+                        </div>
+                    
+                        <div class="sb-centralize side-bar-text-color dip">
+                                <a href="e-Profile.html" class="dsh-link">
+                                        <span class="space">
+                                                <i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i>
+                                        </span>
+                                        <h3 class="d-inl">Profile</h3>
+                                </a>
+                        </div>
+                    
+                        <div class="ent-cntr side-bar-text-color dip">
+                                <p>entrepreneur 2023.</p>
+                        </div>
+                        
+               </div>
+
+                <!-- this is the side bar source code-->
+                <div class="centralize right-side">
+                        <div class="centralize eview-frow" >
+                                 <div class="centralize Tact-sct" >
+                                        <a href="Apply-Funds.html" class="rsd-eview-link">
+                                                <h1 class="text-headn">Apply for Funds</h1>
+                                        </a>
+                                </div>
+
+                                <div class="centralize Tact-sct" >
+                                        <a href="Take-a-loan.html" class="rsd-eview-link">
+                                                <h1 class="text-headn">Take a loan</h1>
+                                        </a>
+                                </div>
+                        </div>
+
+               </div>
+       
+</body>
+</html>

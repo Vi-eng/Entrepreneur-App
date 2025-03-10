@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- this link is for google font poppins-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/dashboard.css">
+    <script src="https://kit.fontawesome.com/0ddd23bcd0.js" crossorigin="anonymous"></script>  <!-- this link is for font awesome icons-->
+
+</head>
+<body>
+                <!-- this is the top nav bar source code-->
+                <div class="top-nav-style">  <!-- this is a grid that contains 5 divs so the divs are postioned by the grid-->
+                                <div class="">
+                                        <img src="images/icons/lapo vector.png" class="pad-class" alt="lapo-logo" width="40%" height="85%">
+                                </div>
+                                <div class="mini-centralize">
+                                        <p class="name-px"><b>Hello,</b> <%= name%> </p>
+                                </div>
+                                <div class="centralize">
+                                        <div>
+                                                <input type="search" placeholder="search" id="search" name="search">
+                                                <span> <i class="fa-solid fa-magnifying-glass" style="color: #0abf12;  width: 50;  height: 50; "></i></span>
+                                        </div>
+                                </div>
+                                <div class="centralize">
+                                        <div class="inner-circle centralize">
+                                                <a href="/E-profile">
+                                                        <i class="fa-solid fa-user fa-xl" style="color: #ff5c00;"></i>
+                                                </a>
+                                        </div>
+                                </div>
+                                <div class="centralize">
+                                                <div class="dropdwn" >
+                                                        <i class="fa-solid fa-ellipsis fa-rotate-90 fa-2x" style="color: #ff5c00;"></i>
+                                                        <div class="dropdown-content">
+                                                                <a href="#">Theme</a>
+                                                                <a href="/Logout">Log out</a>
+                                                        </div>
+                                                </div>
+                                                
+                                        </i>
+                                </div>
+                </div>
+
+                     <!-- this is the side bar source code-->
+                <div class="side-bar">
+                        <div class="sb-centralize side-bar-text-color dip">
+                                <a href="/edashboard" class="dsh-link">
+                                                <span class="space ">
+                                                        <i class="fa-sharp fa-solid fa-house fa-xl" style="color: #ffffff;"></i>
+                                                </span>
+                                                <h3 class="d-inl">Dashboard</h3>
+                                </a>
+                        </div>
+                    
+                        <div class="sb-centralize side-bar-text-color dip">
+                                <div class="radius"> <!-- this radius class here is used to show that we are on this current page-->
+                                        <span class="space">  
+                                                <i class="fa-solid fa-sack-dollar fa-xl" style="color: #0abf12;"></i>
+                                        </span>
+                                        <h3 class="c-page">Apply Funds</h3>
+                                </div>       
+                        </div>
+                    
+                        <div class="sb-centralize side-bar-text-color dip">
+                                <a href="/get-mentor" class="dsh-link"> 
+                                        <span class="space">
+                                                <i class="fa-solid fa-chalkboard-user fa-xl" style="color: #ffffff;"></i>
+                                        </span>
+                                        <h3 class="d-inl">Get a mentor</h3>
+                                </a>
+                        </div>
+                    
+                        <div class="sb-centralize side-bar-text-color dip">
+                                <a href="/E-profile" class="dsh-link">
+                                        <span class="space">
+                                                <i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i>
+                                        </span>
+                                        <h3 class="d-inl">Profile</h3>
+                                </a>
+                        </div>
+                    
+                        <div class="ent-cntr side-bar-text-color dip">
+                                <p>entrepreneur 2023.</p>
+                        </div>
+               </div>
+
+                <!-- this is the side bar source code-->
+                <div class="centralize right-side">
+                       
+                        <div class="centralize af-frow" >
+                                 <div class="centralize af-Tact-sct" >
+                                        <div >
+                                                <a href="/Apply-for-funds" class="ea-txt">
+                                                         <i class="fa-solid fa-arrow-right fa-xl fa-rotate-180" style="color: white;"></i>
+                                                </a>    
+                                         </div>
+                                                <h2 class="text-headn"> Apply for Funds</h2>
+                                                <h3 class="text-headn">Fill the form below to apply for Funds</h3>
+                                </div>
+                                <div class="centralize formm" >
+                                                <form class="af-form" action = '/finance' method = 'POST'>
+                                                        <div class="form-fsect">
+                                                                <label for="Business-name">Business name</label>
+                                                                <div>
+                                                                        <input type="text" name="Business_name" id="Business-name" class="inp-types" required >
+                                                                </div>
+
+                                                                <label for="Business-regno">Business Registeration number</label>
+                                                                <div>
+                                                                        <input type="number" name="Business_regno" id="Business-regno" class="inp-types" required>
+                                                                </div>
+
+                                                                <label for="Business-sector">Business Sector</label>
+                                                                <div>
+                                                                        <input type="text" name="Business_sector" id="Business-sector" class="inp-types" required>
+                                                                </div>
+
+                                                                <label for="Business-idea-des">Business Idea Description</label>
+                                                                <div>
+                                                                        <textarea name="Business_idea_description" id="Business-idea-des" class="inp-types" placeholder="Business-idea" required></textarea>
+                                                                </div>
+                                                        </div>
+
+                                                        <div class="form-Ssect">
+                                                                        <label for="Business-email">Business email</label>
+                                                                        <div>
+                                                                                <input type="email" name="Business_email" id="Business-email" class="inp-types" required>
+                                                                        </div>
+
+                                                                        <label for="Funds-req">Funds Requested </label>
+                                                                        <div>
+                                                                                <input type="text" name="Funds_req" id="Funds-req" class="inp-types" required>
+                                                                        </div>
+                                                                        
+                                                                        <label for="Funds-terms">Fund Terms </label>
+                                                                        <div>
+                                                                                <select name="Funds_terms" id="Funds-terms" class="inp-types" required>
+                                                                                        <option>select</option>
+                                                                                        <option>5% of shares to the investor, 2 years wait</option>
+                                                                                        <option>10% of shares to the investor, 5 years wait</option>
+                                                                                        <option>15% of shares to the investor, 7 years wait</option>
+                                                                                        <option>20% of shares to the investor, 10 years wait</option>
+                                                                                        <option>25% of shares to the investor, 12 years wait</option>
+                                                                                </select>
+                                                                        </div>
+
+                                                                        <div>
+                                                                                <button type="submit" name="Apply" id="Apply" class="af-but-des"> Apply </button>
+                                                                                
+                                                                                <div class="pop-up" id="popup"><!--*code for submit pop-up modal-->
+                                                                                        <img src="images/icons/tick.png" alt="tick-img" class="tick-img">
+                                                                                        <h2>Thank you!</h2>
+                                                                                        <p class="fnt">Your application was successful</p>
+                                                                                        <button type="submit" class="inn-but" onclick="closePopup()"> ok </button>
+                                                                                </div>
+                                                                                <%if(sent == 'sent'){%>
+                                                                                        <script>
+                                                                                                let popup = document.getElementById('popup');
+                                                                                                document.addEventListener('DONContentLoaded', setTimeout(function(){
+                                                                                                        popup.classList.add('open-popup');
+                                                                                                }, 500), false);
+                                                                                                function closePopup(){
+                                                                                                        popup.classList.remove("open-popup")
+                                                                                                }
+
+                                                                                        </script>
+                                                                                <%}%>
+                                                                </div>
+                                                        </div>
+                         
+                                                </form>
+                                 </div>
+                        </div>
+               </div>
+
+               <script>
+                        let inputs = document.querySelectorAll('input');
+                        let textdivs = document.querySelectorAll('textarea');
+
+                        function checkempt(arr, e){
+                                Array.prototype.forEach.call(arr, (field) => {
+                                        if(field.value == '' && field.id != 'search'){
+                                                e.preventDefault();
+                                                console.log(field);
+                                                return;
+                                        };
+                                        
+                                });
+                        };
+                        
+                        document.getElementById('Apply').addEventListener('click', function(e){checkempt(inputs, e); checkempt(textdivs, e);} );
+                                   
+                        
+               </script>
+</body>
+</html>

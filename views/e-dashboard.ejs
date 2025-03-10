@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- boostrap links-->
+     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- this link is for google font poppins-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="stylesheets/dashboard.css">
+         <script src="https://kit.fontawesome.com/0ddd23bcd0.js" crossorigin="anonymous"></script>  <!-- this link is for font awesome icons-->
+         <style>
+                #myModal{
+                    display: none;
+                    position: fixed;
+                    z-index: 1;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    overflow: auto;
+                    background-color: rgba(0, 0, 0, 0.4);
+                }
+    
+                .modalcontent{
+                    background-color: #fefefe;
+                    margin: 15% auto;
+                    padding: 20px;
+                    border: 1px solid #888;
+                    width: 65%;
+                    border-radius: 1rem;
+                    overflow: auto;
+                }
+    
+                .close{
+                    color: #aaa;
+                    float: right;
+                    font-size: 28px;
+                    font-weight: bold;
+                }
+    
+                .close:hover, .close:focus{
+                    color: black;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            </style>
+</head>
+<body>
+                <!-- this is the top nav bar source code-->
+                <div class="top-nav-style">  <!-- this is a grid that contains 5 divs so the divs are postioned by the grid-->
+                                <div class="">
+                                        <img src="images/icons/lapo vector.png" class="pad-class" alt="lapo-logo" width="40%" height="85%">
+                                </div>
+                                <div class="mini-centralize">
+                                        <p class="name-px"><b>Hello,</b> <%= name%> </p>
+                                </div>
+                                <div class="centralize">
+                                        <div>
+                                                <input type="search" placeholder="search" id="search" name="search">
+                                                <span> <i class="fa-solid fa-magnifying-glass" style="color: #0abf12;  width: 50;  height: 50; " ></i></span>
+                                        </div>
+                                </div>
+                                <div class="centralize">
+                                        <div class="inner-circle centralize">
+                                                <a href="/E-profile">
+                                                        <i class="fa-solid fa-user fa-xl" style="color: #ff5c00;"></i>
+                                                </a>
+                                        </div>
+                                </div>
+                                <div class="centralize">
+                                                <div class="dropdwn" >
+                                                        <i class="fa-solid fa-ellipsis fa-rotate-90 fa-2x" style="color: #ff5c00;"></i>
+                                                        <div class="dropdown-content">
+                                                                <a href="#">Theme</a>
+                                                                <a href="/Logout">Log out</a>
+                                                        </div>
+                                                </div>
+                                                
+                                        </i>
+                                </div>
+                </div>
+
+                     <!-- this is the side bar source code-->
+                <div class="side-bar">
+                        <div class="sb-centralize side-bar-text-color">
+                                <div class="radius"> <!-- this radius class here is used to show that we are on this current page-->
+                                                <span class="space ">
+                                                        <i class="fa-sharp fa-solid fa-house fa-xl" style="color: #0abf12;"></i>
+                                                </span>
+                                                <h3 class="c-page">Dashboard</h3>
+                                </div>
+                        </div>
+                    
+                        <div class="sb-centralize side-bar-text-color dip">
+                                <a href="/Apply-for-funds" class="dsh-link">
+                                        <span class="space">  
+                                                <i class="fa-solid fa-sack-dollar fa-xl" style="color: #ffffff;"></i>
+                                        </span>
+                                        <h3 class="d-inl">Apply Funds</h3>
+                                </a>       
+                        </div>
+                    
+                        <div class="sb-centralize side-bar-text-color dip">
+                                <a href="/get-mentor" class="dsh-link">
+                                        <span class="space">
+                                                <i class="fa-solid fa-chalkboard-user fa-xl" style="color: #ffffff;"></i>
+                                        </span>
+                                        <h3 class="d-inl">Get a mentor</h3>
+                                </a>
+                        </div>
+                    
+                        <div class="sb-centralize side-bar-text-color dip">
+                                <a href="/E-profile" class="dsh-link"> 
+                                        <span class="space">
+                                                <i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i>
+                                        </span>
+                                        <h3 class="d-inl">Profile</h3>
+                                </a>
+                        </div>
+                    
+                        <div class="ent-cntr side-bar-text-color dip">
+                                <p>entrepreneur 2023.</p>
+                        </div>
+               </div>
+
+                <!-- this is the side bar source code-->
+                <div class="centralize right-side">
+                        <div class="centralize frow" >
+                                        <div class="centralize Anlyts-sct" >
+                                                <div class=" h-sect text-headn" >
+                                                        <h1 >Funding Analytics</h1>
+                                                </div>
+                                                <div class="img-anlts-cont centralize">
+                                                        <img src="images/icons/img-2.png" alt="fund-img" class="fund-img" >
+                                                </div>
+                                        </div>
+
+                                        <div class="centralize Anlyts-sct" >
+                                                <div class=" h-sect text-headn" >
+                                                        <h1 >Funding Growth</h1>
+                                                </div>
+                                                <div class="img-anlts-cont centralize">
+                                                        <img src="images/icons/img-3.png" alt="growth-img" class="growth-img" >
+                                                </div>
+                                        </div>
+                        </div>
+
+                        <div class="centralize srow" >
+                               <div class="centralize b-cont" >
+                                        <div class="h-sect text-headn" >
+                                                <h1>Business Progress</h1>
+                                        </div>
+                                        <div class="table-cont">
+                                                <table class="b-detls">
+                                                        <tr>
+                                                                <td>Name of Business</td>
+                                                                <td>Approved</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Business Idea</td>
+                                                                <td>Approved</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Funds Requested</td>
+                                                                <td><a id = 'Viewfunds'>View</a></td>
+                                                        </tr>
+                                                </table>
+                                        </div>
+                               </div>
+
+                               <div class="centralize b-cont" >
+                                <div class="h-sect text-headn" >
+                                        <h1>Notifications</h1>
+                                </div>
+                                <div class="table-cont">
+                                        <table class="b-detls">
+                                                <tr>
+                                                        <td class="n-td">Dandills Indicated interest</td>
+                                                        <td><input type="checkbox" checked></td>
+                                                </tr>
+                                                <tr>
+                                                        <td>Dandills Indicated interest</td>
+                                                        <td><input type="checkbox" checked></td>
+                                                </tr>
+                                                <tr>
+                                                        <td>Dandills Indicated interest</td>
+                                                        <td><input type="checkbox" checked></td>
+                                                </tr>
+                                        </table>
+                                </div>
+                                
+                        </div>
+                </div>
+                <div id = 'myModal' class = 'modal'>
+                        <div class = 'modalcontent'>
+                            <span class = 'close'>&times;</span>
+                            <span id = 'emptyspan' style = 'display: none; color: #ff5c00'>You have not submitted any loan/fund requests!</span>
+                            <table class="b-detls" id = 'table'>
+                                <thead>
+                                       <tr>
+                                        <th>Name of Business</th>
+                                        <th>Business Sector</th>
+                                        <th>Requested Funds</th>
+                                        <th>Approved</th>
+                                        <th>Cancel</th>
+                                       </tr> 
+                                </thead>
+                                <tbody id = 'tbody'>
+
+                                </tbody>
+                            </table>
+                        </div>
+                </div>    
+                <script src = './javascripts/Mentors_funds.js' type = 'module'></script>
+                <script type = 'module'>     
+                        import {entredash} from './javascripts/Mentors_funds.js';
+                        function displaymodal(){
+                                var modal = document.getElementById('myModal');
+                                modal.style.display = 'block';
+                        };
+                        
+                        //Modal
+                        var modal = document.getElementById('myModal');
+                        var closespan = document.getElementsByClassName('close')[0];
+
+                        //modal.style.display = 'block';
+
+                        closespan.onclick = function() {
+                        modal.style.display = 'none';
+                        }; 
+
+                        window.onclick = function(event) {
+                        if (event.target == modal){
+                                modal.style.display = 'none';
+                        }
+                        };
+
+                        //Process returned values
+                        entredash().then(rows => {
+                                var returned_rows = rows;
+                                console.log(returned_rows);
+                                var tablebody = document.getElementById('tbody');
+                                var eptyspan = document.getElementById('emptyspan');
+                                if(returned_rows.length > 0){
+                                        tablebody.innerHTML = returned_rows;
+                                        console.log('tablebody', tablebody);
+                                }else{
+                                        table.style.display = 'none';
+                                        eptyspan.style.display = 'block';
+                                };
+                        });
+
+                        var view = document.getElementById('Viewfunds');
+                        view.addEventListener('click', function(){displaymodal();});
+
+                        var cancelbuttons = document.getElementsByClassName('cancelbutton' );
+                        var statuses = document.getElementsByClassName('status');
+
+                        Array.prototype.forEach.call(cancelbuttons, (button, index) => {
+                                if (statuses[index].innerText == 'Cancelled'){
+                                        button.style.color = 'red';
+                                        button.addEventListener('click', function(e){e.preventDefault();})
+                                };
+                        });
+
+                    </script>
+</body>
+</html>

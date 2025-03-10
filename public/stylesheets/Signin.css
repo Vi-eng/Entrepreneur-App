@@ -1,0 +1,132 @@
+/*Elements*/
+body{
+    background-color: #FFF1D4;
+    margin: 5% 0 0 0;
+}
+
+form{
+    padding: 0 0 0 1.5rem;
+}
+
+form div{
+    margin: 0 0 0 5.5%;
+
+}
+
+
+input{
+    width: 85%;
+    height: 1.6rem;
+    font-size: 0.6rem;
+    padding: 0 0 0 2%;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.03rem 0.04rem 0 #404040;
+    border: 1px solid #FF5C00;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+input:focus::placeholder{
+    visibility: hidden;
+}
+
+button{
+    height: 1.6rem;
+    width: 85%;
+    margin: 5% 0 0 5.5%;
+    border-radius: 0.6rem;
+    border: none;
+    font-size: 0.8rem;
+}
+/*Classes*/
+.green{
+    background-color: #0ABF12 !important;
+}
+
+.greentxt{
+    color: #0ABF12 !important;
+}
+
+.greeninput{
+    border-color: #0ABF12 !important;
+}
+
+.orange{
+    background-color: #FF5C00;
+}
+
+.orangetxt{
+    color: #FF5C00;
+}
+
+.red{
+    color: red;
+}
+
+.whiteback{
+    background-color: white;
+}
+
+.white{
+    color: white !important;
+}
+
+.copyright{
+    color: #F87700;
+}
+
+.hide{
+    display: none;
+}
+
+.centeralign{
+    text-align: center;
+}
+
+.val{
+    font-size: 0.55rem;
+}
+
+
+/*IDs*/
+#header{
+    border-radius: 1rem 1rem 0 0;
+    height: 2.5rem;
+    margin: 0 0 1.5rem 0;
+    padding: 0.1rem 0 0 0.15rem;
+}
+
+#header span{
+    display: inline-block;
+    width: 32.59%;
+    padding: 0.5rem 0 0 0rem;
+    height: 74.5%;
+    text-align: center;
+}
+
+#Entrepreneur{
+    border-radius: 0.8rem 0 0 0;
+}
+
+#Investor{
+    border-radius: 0 0 0 0;
+}
+
+#Mentor{
+    border-radius: 0 0.8rem 0 0;
+}
+
+#Login-body{
+    margin: 0 0 0 30%;
+    padding: 0 0 0.7% 0;
+    border-radius: 1rem;
+    width: 40%;
+    background-color: white;
+}
+
+#clicktocreate, #Forgot, #Entrepreneur, #Investor, #Mentor, button{
+    cursor: pointer;
+}

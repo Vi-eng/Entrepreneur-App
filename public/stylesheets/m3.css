@@ -1,0 +1,387 @@
+a{
+  text-decoration: none;
+  color: rgba(255, 91, 0, 1);;
+}
+
+.landingpage-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.landingpage-landingpage {
+  width: 100%;
+  height: 714px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(158, 215, 228, 1);
+  border-style: solid;
+  border-width: 0.5883769989013672px;
+  background-color: rgb(255, 241, 212);
+}
+
+.landingpage-text {
+  top: 171.80609130859375px;
+  left: 12rem;
+  color: rgba(255, 91, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 45.30503463745117px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Verdana;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.landingpage-text05 {
+  top: 295.95367431640625px;
+  left: 12rem;
+  color: rgba(92, 86, 82, 1);
+  height: auto;
+  position: absolute;
+  font-size: 17.65131187438965px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Verdana;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.landingpage-group4 {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.landingpage-lapovector1 {
+  top: 13.532674789428711px;
+  left: 78.25414276123047px;
+  width: 7rem;
+  height: 3rem;
+  position: absolute;
+}
+.landingpage-text07 {
+  top: 26.476987838745117px;
+  left: 67.5rem;
+  color: rgba(255, 91, 0, 1);
+  width: 107px;
+  height: auto;
+  position: absolute;
+  font-size: 16.474557876586914px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Verdana;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.landingpage-text09 {
+  top: 26.476987838745117px;
+  left: 75rem;
+  color: rgba(255, 91, 0, 1);
+  width: 64px;
+  height: auto;
+  position: absolute;
+  font-size: 16.474557876586914px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Verdana;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.landingpage-text11 {
+  top: 26.476987838745117px;
+  left: 82.5rem;
+  color: rgba(10, 191, 18, 1);
+  width: 90px;
+  height: auto;
+  position: absolute;
+  font-size: 16.474557876586914px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Verdana;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.landingpage-group3 {
+  top: 637.2123413085938px;
+  left: 12rem;
+  width: 130.03131103515625px;
+  height: 38.8328857421875px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius:1rem; 
+  box-shadow: 0px 2px 2px 0px #777777;
+}
+.landingpage-text13 {
+  top: 8.237274169921875px;
+  left: 17.651397705078125px;
+  color: rgba(255, 91, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 17.65131187438965px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Verdana;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  }
+.landingpage-text15 {
+  top: 364.7937316894531px;
+  left: 17.5rem;
+  color: rgba(92, 85, 82, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18.82806396484375px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Verdana;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.landingpage-text17 {
+  top: 485.41107177734375px;
+  left: 17.5rem;
+  color: rgba(92, 85, 82, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18.82806396484375px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Verdana;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.landingpage-text19 {
+  top: 545.4254760742188px;
+  left: 17.5rem;
+  color: rgba(92, 85, 82, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18.82806396484375px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Verdana;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.landingpage-text21 {
+  top: 424.8081970214844px;
+  left: 17.5rem;
+  color: rgba(92, 85, 82, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18.82806396484375px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Verdana;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.landingpage-ellipse5 {
+  top: 6.5rem;
+  left: 50rem;
+  width: 38rem;
+  height: 38rem;
+  position: absolute;
+}
+
+.landingpage-ellipse51 {
+  top: 30rem;
+  left: 488.3529357910156px;
+  width: 505px;
+  height: 505px;
+  position: absolute;
+  border-color: rgba(222, 55, 55, 1);
+  border-style: solid;
+  border-width: 2.941885471343994px;
+}
+.landingpage-firmhandshakebetweentwobusinesspeople1 {
+  top: 7rem;
+  left: 50.5rem;
+  width: 36.6rem;
+  height: 36.6rem;
+  position: absolute;
+  box-sizing: content-box;
+  border-radius: 50rem;
+}
+.landingpage-ellipse6 {
+  top: 369.50079345703125px;
+  left: 111.20328521728516px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+}
+.landingpage-ellipse10 {
+  top: 491.8832092285156px;
+  left: 111.20328521728516px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+}
+.landingpage-ellipse11 {
+  top: 376.5613098144531px;
+  left: 61.19118881225586px;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+}
+.landingpage-dashed-line {
+  top: 551.8976440429688px;
+  left: 84.13793182373047px;
+  width: 41px;
+  height: 53px;
+  position: absolute;
+}
+.landingpage-round {
+  top: 353.0262145996094px;
+  left: 14rem;
+  width: 47px;
+  height: 47.07015609741211px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.landingpage-vector {
+  top: 4.7070159912109375px;
+  left: 4.707042694091797px;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+}
+.landingpage-mortgage {
+  top: 11.76754093170166px;
+  left: 11.179166793823242px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.landingpage-round1 {
+  top: 413.04071044921875px;
+  left: 14rem;
+  width: 47px;
+  height: 47.07015609741211px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.landingpage-vector1 {
+  top: 4.706972122192383px;
+  left: 4.707042694091797px;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+}
+.landingpage-coinin-hand {
+  top: 11.767497062683105px;
+  left: 11.76753044128418px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.landingpage-round2 {
+  top: 473.64349365234375px;
+  left: 14rem;
+  width: 47px;
+  height: 47.07015609741211px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.landingpage-vector2 {
+  top: 4.7070159912109375px;
+  left: 4.707042694091797px;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+}
+.landingpage-positive-dynamic {
+  top: 11.76754379272461px;
+  left: 11.76753044128418px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.landingpage-round3 {
+  top: 533.657958984375px;
+  left: 14rem;
+  width: 47px;
+  height: 47px;
+  position: absolute;
+}
+.landingpage-link {
+  top: 545.4254760742188px;
+  left: 14.7rem;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.landingpage-line1 {
+  top: 24.5rem;
+  left: 14.55rem;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  box-sizing: content-box;
+}
+.landingpage-line2 {
+  top: 28.2rem;
+  left: 14.55rem;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  box-sizing: content-box;
+}
+.landingpage-line3 {
+  top: 31.9rem;
+  left: 14.55rem;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  box-sizing: content-box;
+}
+
+#Get-s, #About, #Sign, #Contact{
+  cursor: pointer;
+}
+
+#Get-s:hover{
+  box-shadow: none;
+}

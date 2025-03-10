@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- this link is for google font poppins-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/dashboard.css">
+    <script src="https://kit.fontawesome.com/0ddd23bcd0.js" crossorigin="anonymous"></script>  <!-- this link is for font awesome icons-->
+
+</head>
+<body>
+        <!-- this is the top nav bar source code-->
+        <div class="top-nav-style">  <!-- this is a grid that contains 5 divs so the divs are postioned by the grid-->
+                        <div class="">
+                                <img src="images/icons/lapo vector.png" class="pad-class" alt="lapo-logo" width="40%" height="85%">
+                        </div>
+                        <div class="mini-centralize">
+                                <p class="name-px"><b>Hello,</b> <%=name%> </p>
+                        </div>
+                        <div class="centralize">
+                                <div>
+                                        <input type="search" placeholder="search" id="search" name="search">
+                                        <span> <i class="fa-solid fa-magnifying-glass" style="color: #0abf12;  width: 50;  height: 50; "></i></span>
+                                </div>
+                        </div>
+                        <div class="centralize">
+                                <div class="inner-circle centralize">
+                                        <a href="/Admin-profile">
+                                                <i class="fa-solid fa-user fa-xl" style="color: #ff5c00;"></i>
+                                        </a>
+                                </div>
+                        </div>
+                        <div class="centralize">
+                                        <div class="dropdwn" >
+                                                <i class="fa-solid fa-ellipsis fa-rotate-90 fa-2x" style="color: #ff5c00;"></i>
+                                                <div class="dropdown-content">
+                                                        <a href="#">Theme</a>
+                                                        <a href="/Logout">Log out</a>
+                                                </div>
+                                        </div>
+                                        
+                                </i>
+                        </div>
+        </div>
+
+             <!-- this is the side bar source code-->
+        <div class="side-bar">
+                <div class="sb-centralize side-bar-text-color dip">
+                    <div class="radius"> <!-- this radius class here is used to show that we are on this current page-->
+                                        <span class="space ">
+                                                <i class="fa-sharp fa-solid fa-house fa-xl" style="color: #0abf12;"></i>
+                                        </span>
+                                        <h3 class="c-page">Dashboard</h3>
+                         </div>
+                </div>
+            
+                <div class="sb-centralize side-bar-text-color dip">
+                        <a href="/EAdmin" class="dsh-link" class="dsh-link">
+                                <span class="space">  
+                                    <i class="fa-solid fa-briefcase fa-xl" style="color: #ffffff;"></i>
+                                </span>
+                                <h3 class="d-inl">Entrepreneures</h3>
+                        </a>       
+                </div>
+            
+                <div class="sb-centralize side-bar-text-color dip">
+                        <a href="/IAdmin" class="dsh-link">
+                                <span class="space">
+                                        <i class="fa-solid fa-chalkboard-user fa-xl" style="color: #ffffff;"></i>
+                                </span>
+                                <h3 class="d-inl">Investors</h3>
+                        </a>
+                </div>
+            
+                <div class="sb-centralize side-bar-text-color dip">
+                    <a href="/MAdmin" class="dsh-link">
+                                <span class="space">
+                                        <i class="fa-solid fa-user fa-xl" style="color:#ffffff ;"></i>
+                                </span>
+                                <h3 class="d-inl">Mentors</h3>
+                         </a>
+                </div>
+            
+                <div class="ent-cntr side-bar-text-color dip">
+                        <p>entrepreneur 2023.</p>
+                </div>
+       </div>
+
+        <!-- this is the side bar source code-->
+                <div class="centralize right-side">
+                        <div class="centralize frow" >
+                                <div class="sboth-cont">
+                                        <div class="centralize mp-hed">
+                                                <h3>My Profile</h3>
+                                        </div>
+                                        <div class=" centralize mp-out-sct" >
+                                               <div class="mp-in-fsect">
+                                
+                                               </div>
+                                               <h4 class="mp-cmr-txt">Mr Admin</h4>
+                                                <div class="centralize vfp-cont">
+                                                         <div class="mp-in-ssect">
+                                                                <i class="fa-solid fa-pen-to-square fa-xl" style="color: #0abf12;"></i>
+                                                          </div>
+                                                          <div class="mp-in-ssect1">
+                                                                <div class="dropdwn1" >
+                                                                        <p>View full profile</p>
+                                                                                <div class="dropdown-content">
+                                                                                        <a href="#" class="bio"> My name is Dr. Victory and i am a the Chief executive director of 
+                                                                                                Sky Tech Limited
+                                                                                        </a>
+                                                                                </div>
+                                                                 </div>
+                                                         </div>
+                                               
+                                                 </div> 
+
+                                </div>
+                       </div>
+               </div>
+       
+</body>
+</html>
