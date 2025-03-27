@@ -5,11 +5,11 @@ This is an application designed primarily for new Entrepreneurs by the members o
 
 The members of team AlphaLogic include: 
 
-Damilola Oni
+Frontend developer/Presenter: Damilola Oni (https://www.linkedin.com/in/damilola-oni-4a0bb5180/)
 
-Samuel Itojie
+Web designer and Lead Frontend developer: Samuel Itojie (https://www.linkedin.com/in/samuel-itoje-468380245/)
 
-Osazuwa-Ojo Victory(me)
+Frontend and Backend developer: Osazuwa-Ojo Victory(me)
 
 The application's process flow can be found here:
 
